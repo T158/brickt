@@ -26,6 +26,7 @@ urlpatterns = [
 
     # item
     url(r'', include('item.urls')),
+    url(r'^/$', include('item.urls')),
     url(r'^item/', include('item.urls')),
 
     # 管理サイト
