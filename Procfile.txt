@@ -1,1 +1,1 @@
-web: gunicorn brickset_app.wsgi --log-file -
+web: gunicorn brickset_app.wsgi
