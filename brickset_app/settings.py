@@ -123,3 +123,14 @@ STATIC_URL = '/static/'
 # ログイン用の設定
 LOGIN_REDIRECT_URL = '/item/'
 LOGIN_URL = '/accounts/login/'
+
+DEBUG = False
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
+
+if not DEBUG:
+    import django_heroku
+    django_heroku.settings(locals())
