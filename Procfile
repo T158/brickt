@@ -1,1 +1,1 @@
-web: gunicorn item.wsgi
+web: gunicorn brickset_app.wsgi
