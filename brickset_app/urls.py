@@ -21,11 +21,11 @@ from django.contrib.auth.views import login, logout
 urlpatterns = [
 
     # ログイン
-    url(r'^$', login, {'template_name': 'accounts/login.html'}, name='login'),
     url(r'^accounts/login/$', login, {'template_name': 'accounts/login.html'}, name='login'),
     url(r'^accounts/logout/$', logout, {'next_page': '/accounts/login/'}, name='logout'),
 
     # item
+    url(r'', include('item.urls')),
     url(r'^item/', include('item.urls')),
 
     # 管理サイト
