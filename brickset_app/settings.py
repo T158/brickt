@@ -52,9 +52,6 @@ MIDDLEWARE = [
   # ...
 ]
 
-
-]
-
 ROOT_URLCONF = 'brickset_app.urls'
 
 TEMPLATES = [
